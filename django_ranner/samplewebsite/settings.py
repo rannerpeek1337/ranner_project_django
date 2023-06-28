@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "127.0.0.1:8000",
     "http://ranner.pythonanywhere.com"
+    'localhost', '127.0.0.1', 'ranner.pythonanywhere.com'
 ]
 
 # Application definition

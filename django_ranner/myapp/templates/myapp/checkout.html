@@ -1,0 +1,19 @@
+<!-- checkout.html -->
+
+<form action="{% url 'checkout' %}" method="POST">
+  {% csrf_token %}
+
+
+  {% if error_message %}
+    <div class="alert alert-danger">{{ error_message }}</div>
+  {% endif %}
+
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{ settings.STRIPE_PUBLISHABLE_KEY }}"
+          data-name="Example Store"
+          data-description="Example Charge"
+          data-amount="1000"
+          data-currency="usd"
+          data-locale="auto"></script>
+</form>

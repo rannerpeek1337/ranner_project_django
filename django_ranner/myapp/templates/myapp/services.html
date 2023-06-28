@@ -1,0 +1,42 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}
+services
+{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+<div class="row my-5">
+<div class="col-sm-3 offset-1">
+<div class="card" style="width: 18rem;">
+  <img src="https://openshop.uz/public/storage/uploads/products/photos/202301/GaC73um0EwsIcuPWTtHnaBzK7bxMNJvRuKUrpJsg.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Телефоны</h5>
+    <p class="card-text"></p>
+    <a href="{% url 'view_cart' %}" class="btn btn-primary">Купить сейчас</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-3 offset-1">
+<div class="card" style="width: 18rem;">
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011_FMT_WHH?wid=607&hei=556&fmt=jpeg&qlt=90&.v=1633623988000" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Наушники</h5>
+    <p class="card-text"></p>
+    <a href="{% url 'view_cart' %}" class="btn btn-primary">Купить сейчас</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-3 offset-1">
+  <div class="card" style="width: 18rem;">
+    <img src="https://assets-prd.ignimgs.com/2023/05/01/alienwarem16-1682980673533.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ноутбуки</h5>
+      <p class="card-text"></p>
+      <a href="{% url 'view_cart' %}" class="btn btn-primary">Купить сейчас</a>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

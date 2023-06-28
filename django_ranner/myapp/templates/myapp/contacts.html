@@ -1,0 +1,78 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}
+contact
+{% endblock title %}
+
+{% block body %}
+
+<!doctype html>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../myapp/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+   
+
+  <div class="b-example-divider"></div>
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Наши контакты</h1>
+        <p class="col-lg-10 fs-4">Почта : ranner@gmail.com</p>
+        <p class="col-lg-10 fs-4">Контакты : +998 93 815 13 37</p>
+      </div>
+      <form action="" method="POST">
+            {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Ваше имя</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Ильдар Здравствуйте">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Ваша почта</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1"  name="email" placeholder="ildarsaygofarov@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Ваш номер телефона</label>
+            <input type="phone" class="form-control" id="exampleFormControlInput1" name="phone" placeholder="+998 99 999 99 99">
+          </div>
+          <div class="mb-3">
+            <label for="dec" class="form-label">Скажи мне, для чего ты хочешь связаться</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="dec" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="../myapp/bootstrap.js"></script>
+
+      
+  </body>
+</html>
+
+{% endblock body %}

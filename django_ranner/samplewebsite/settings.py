@@ -26,7 +26,10 @@ SECRET_KEY = 'ql_e*1)0-7+x-^i&4d+j0xe07d2w^^zs&48_l_cm+=kndt9ac@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1:8000",
+    "http://ranner.pythonanywhere.com"
+]
 
 # Application definition
 
